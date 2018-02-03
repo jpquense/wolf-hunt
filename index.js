@@ -25,27 +25,53 @@ function handleApisResponse(responses) {
 }
 
 function searchApisFor(searchTerm) {
-	const firstCall = $.ajax({
+	const articleCall = $.ajax({
     method: 'get',
     data: {
-    	tag: searchTerm,
+      'api-key': '3710cd87703f4791a369cf34c5139e41',
+    	q: searchTerm,
     },
-    url: 'https://relic-idea.glitch.me/first-api',
+    url: 'https://api.nytimes.com/svc/search/v2/articlesearch.json',
   });
 
-  const secondCall = $.ajax({
+  const movieCall = $.ajax({
     method: 'get',
     data: {
-    	keyword: searchTerm,
-    },
-    url: 'https://relic-idea.glitch.me/second-api',
+      r: json,
+      plot: short
+    }, 
+    url: `http://www.omdbapi.com/?t=${searchTerm}&apikey=2fd347a7`,
+
   });
+
+  const videoCall = $.ajax({
+    method: 'get',
+    data: {
+      key: 'AIzaSyBBMquy6Vb126Q6C3INBen46s_4TwZEpw0',
+      q: `${searchTerm} in:name`,
+      part: 'snippet',
+      maxResutls: 5
+    },
+    url: 'https://www.googleapis.com/youtube/v3/search',
+  });
+
+    const bookCall = $.ajax({
+    method: 'get',
+    data: {
+      key: 'AIzaSyDGFCGIZUTEwOQ3YCbfdk1kn4ug1ZWXC48',
+      q: `${searchTerm} intitle`,
+      filter: 'partial',
+      maxresutls: 5
+    },
+    url: 'https://www.googleapis.com/books/v1/volumes',
+  });
+
   console.log('=== running ===');
 
-  Promise.all([firstCall, secondCall]).then(handleApisResponse);
+  Promise.all([articleCall, movieCall, videoCall, bookCall]).then(handleApisResponse);
 }
 
-$('.js-search-buttton').click(function(e) {
+$('.js-search').click(function(e) {
 	e.preventDefault();
   const searchValue = $('.search-input').val();
   searchApisFor(searchValue);
