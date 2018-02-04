@@ -6,7 +6,7 @@
 	<title>Wolf Hunt</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -28,22 +28,41 @@
 				<p>allow the wolf to do the hunting</p>
 				<p>enter any keywork, topic or title and</p>
 				<p>the wolf will find your prey</p>
-				<p>if your appitite is for articles... then feast</p>
-				<p>if you hunger for books... eat</p>
-				<p>if you crave vidoes or movies... indulge</p>
 			</section>
-			<form>
-				<fieldset>
-					<legend>wolf hunt</legend>
-						<input type="text" id name="" placeholder="ex. wolf pack . . . ">
-						<label for="search">video</label>
-						<button class="js-search-buttton">hunt</button>
+
+			<form class="js-form" action="#" method="get">
+				<fieldset name="wolf hunt">
+					<label for="search">what shall we track down?</label>
+					<input type="text" name="input" id="js-input" placeholder="ex. 'wolf pack'">
+					<button type="submit">hunt</button>
 				</fieldset>
 			</form>
+
+			<div class="js-loader"></div>
+			<section role="region" class="js-results">
+				<div class="js-articles">
+					
+				</div>
+				<div class="js-movies">
+					
+				</div>
+				<div class="js-videos">
+					
+				</div>
+				<div class="js-books">
+					
+				</div>
+				
+			</section>
 		</main>
 		<footer role="contentinfo">
 			
 		</footer>
 	</div>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
