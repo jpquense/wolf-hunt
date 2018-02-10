@@ -6,47 +6,44 @@
 	<title>Wolf Hunt</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="float.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<div class="container-fluid">
+	<div>	
 		<nav role="navigation">
-			<ul>
-				<li>home</li>
-				<li>search</li>
-				<li>contact</li>
+			<ul class="topnav">
+			  <li><a class="active" href="#home">home</a></li>
+			  <li><a href="#js-input">hunt</a></li>
+			  <li><a href="#contact">contact</a></li>
+			  <li class="right"><a href="#about">about</a></li>
 			</ul>
 		</nav>
-		<header role="banner">
-			<h1>wolf hunt</h1>
-			<p>when hungry the wolf is tenacious its it search for prey</p>
-			<p>search with all the tenacity of the wolf</p>
+		<header role="banner" class="row">
+			<h1 class="col-12" id="home">wolf hunt</h1>
+			<p class="col-12">when hungry; the wolf is tenacious in his/her search for prey</p>
+			<p class="col-12">search with all the tenacity of the wolf</p>
 		</header>
 		<main role="main">
-			<section role="region">
-				<h2>search with the power of the wolf</h2>
-				<p>allow the wolf to do the hunting</p>
-				<p>enter any keywork, topic or title and</p>
-				<p>the wolf will find your prey</p>
+			<section role="region" class="row">
+				<h2 class="col-12">search with the ferocity of the wolf</h2>
+				<p class="col-12">allow the wolf to do the hunting</p>
+				<p class="col-12">enter any keywork, topic or title and</p>
+				<p class="col-12">the wolf will find your prey</p>
 			</section>
 
-			<form class="js-form" action="#" method="get">
+			<form class="js-form row form" action="#" method="get">
 				<fieldset name="wolf hunt">
-					<label for="search">what shall we track down?</label>
-					<input type="text" name="input" id="js-input" placeholder="ex. 'wolf pack'">
-					<button type="submit">hunt</button>
+					<label class="col-4 label" for="search">what shall we track down?</label>
+					<input class="col-4 input" type="text" name="input" id="js-input" placeholder="ex. 'wolf pack'">
+					<button class="col-4 btn" type="submit">hunt</button>
 				</fieldset>
 			</form>
 
-			<section role="region">
-				<div class="js-loader"></div>
-				<div class="js-message"></div>
+			<section role="region" class="row spinner">
+				<div class="js-loader col-12"></div>
+				<div class="js-message col-12"></div>
 			</section>
-
-			<h2>Bottom Modal</h2>
-
-			<!-- Trigger/Open The Modal -->
-			<button id="myBtn">Open Modal</button>
 
 			<!-- The Modal -->
 			<div id="myModal" class="modal">
@@ -61,23 +58,26 @@
 			      <p>Some text in the Modal Body</p>
 			      <p>Some other text...</p>
 			    </div>
-			    <div class="modal-footer">
-			      <h3>Modal Footer</h3>
-			    </div>
 			  </div>
 
 			</div>
 
-			<section role="region" class="js-results">
-				<div class="js-articles"></div>
-				<div class="js-videos"></div>
-				<div class="js-books"></div>
+			<section role="region" class="row js-results">
+				<div id="videos" class="col-6 js-videos"></div>
+				<div class="col-6 js-books"></div>		
+			</section>
 
-				
+			<section role="region" class="row about">
+				<h3 class="col-12">about</h3>
+				<p id="about" class="col-12">wolf hunt was made by the designer at phoenixKoding to create an unique search experience for videos, articles, magazines, ebooks and books. this is made possible with two popular google apis: google books; which includes an abundance of books, ebooks, articles and magazines, as well as the ever growing collection of videos from youTube. enjoy!</p>
 			</section>
 		</main>
 		<footer role="contentinfo">
-			
+			<ul class="footer">
+			  <li id="contact"><a href="mailto:jpquense@gmail.com?Subject=wolf%20hunt" target="_top">email</a></li>
+			  <li><a href="#">website</a></li>
+			  <li class="right"><a href="#">by phoenixKoding</a></li>
+			</ul>
 		</footer>
 	</div>
 	<script
