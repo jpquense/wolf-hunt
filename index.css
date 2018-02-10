@@ -78,6 +78,7 @@ ul.topnav li.right {float: right;}
 .input:hover {
 	background-color: rgba(218,165,32,0.6);
 	color: black;
+	cursor: pointer;
 }
 
 .btn {
@@ -89,6 +90,7 @@ ul.topnav li.right {float: right;}
 .btn:hover {
 	background-color: #DAA520;
 	color: black;
+	cursor: pointer;
 }
 
 .loader {
@@ -119,22 +121,23 @@ div.book-result {
     margin-bottom: 20px;
 }
 
-div.book-result a:link {
+a:link {
     color: navy;
 }
 
 /* visited link */
-div.book-result a:visited {
+a:visited {
 	color: lightpink;
 }
 
 /* mouse over link */
-div.book-result a:hover {
+a:hover {
     color: brown;
+    cursor: pointer;
 }
 
 /* selected link */
-div.book-result a:active {
+a:active {
     color: gold;
 }
 
@@ -193,6 +196,21 @@ div.book-result a:active {
 	padding: 2px 16px;
 	background-color: rgba(143,0,64,0.2);
 	text-align: center;
+}
+
+@media screen and (max-width: 650px){
+    .video-result img {
+    	width: 95%;
+    }	
+
+    .modal-body iframe {
+		width: auto;
+	    height: auto;
+    }
+}
+
+  {
+	
 }
 
 /* Add Animation */
