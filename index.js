@@ -102,4 +102,5 @@ $('.js-results').on('click', '.js-modal', function(e) {
 
 $('.close').on('click', function() {
  $('#myModal').hide();
+$('.modal-body').html('');
 })
