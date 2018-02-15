@@ -95,7 +95,7 @@ $('.js-results').on('click', '.js-modal', function(e) {
   const videoTitle = $(e.currentTarget).attr('data-videoTitle');
 
   $('.modal-header h2').text(videoTitle);
-  $('.modal-body').html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`)
+  $('.modal-body').html(`<iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`)
 
   $('#myModal').show();
 });

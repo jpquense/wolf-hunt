@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width initial-scale=1">
-	<title>Wolf Hunt</title>
+	<title>Word And Video</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="float.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
@@ -16,35 +17,25 @@
 		<nav role="navigation">
 			<ul class="topnav">
 			  <li><a class="active" href="#home">home</a></li>
-			  <li><a href="#js-input">hunt</a></li>
-			  <li><a href="#contact">contact</a></li>
+			  <li><a href="#js-input">search</a></li>
+			  <li><a href="#contact">email</a></li>
 			  <li class="right"><a href="#about">about</a></li>
 			</ul>
 		</nav>
 		<header role="banner" class="row">
-			<h1 class="col-12" id="home">wolf hunt</h1>
-
-			<section role="region" class="row about">
-				<h3 class="col-12">about</h3>
-				<p id="about" class="col-12">wolf hunt was made by the designer at phoenixKoding to create an unique search experience for videos, articles, magazines, ebooks and books. this is made possible with two popular google apis: google books; which includes an abundance of books, ebooks, articles and magazines, as well as the ever growing collection of videos from youTube. enjoy!</p>
-			</section>
-
-			<p class="col-12">when hungry; the wolf is tenacious in his/her search for prey</p>
-			<p class="col-12">search with all the tenacity of the wolf</p>
+			<h1 class="col-12" id="home">word and video</h1>
+			<h2 class="col-12">rapid search for videos, books and articles</h2>
+			<div class="col-12">
+				<p>search for any videos or books to read and watch media on your favorite topics!</p>
+			</div>
 		</header>
 		<main role="main">
-			<section role="region" class="row">
-				<h2 class="col-12">search with the ferocity of the wolf</h2>
-				<p class="col-12">allow the wolf to do the hunting</p>
-				<p class="col-12">enter any keyword, topic or interest and</p>
-				<p class="col-12">the wolf will find your prey</p>
-			</section>
-
+			
 			<form class="js-form row form" action="#" method="get">
 				<fieldset name="wolf hunt">
-					<label class="col-4 label" for="search">what shall we track down?</label>
+					<label class="col-4 label" for="search">enter any search topic?</label>
 					<input class="col-4 input" type="text" name="input" id="js-input" placeholder="ex. 'wolf pack'">
-					<button class="col-4 btn" type="submit">hunt</button>
+					<button class="col-4 btn" type="submit">search</button>
 				</fieldset>
 			</form>
 
@@ -73,6 +64,11 @@
 			<section role="region" class="row js-results">
 				<div id="videos" class="col-6 js-videos"></div>
 				<div class="col-6 js-books"></div>		
+			</section>
+
+			<section role="region" class="row about">
+				<h3 class="col-12">about</h3>
+				<p id="about" class="col-12">word and video was made by the designer at phoenixKoding to create an unique, direct and rapid search experience for videos, articles, magazines, ebooks and books. this is made possible with two popular google apis: google books; which includes an abundance of books, ebooks, articles and magazines, as well as the ever growing collection of videos from youTube. enjoy!</p>
 			</section>
 
 		</main>
