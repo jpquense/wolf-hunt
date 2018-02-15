@@ -1,14 +1,14 @@
-# Wolf Hunt
+# Word And Video
 
-*Wolf Hunt* is a simple web application made by the designer at **phoenixKoding** to create an unique search experience for videos, articles, magazines, ebooks and books. this is made possible with two popular google apis: google books; which includes an abundance of books, ebooks, articles and magazines, as well as the ever growing collection of videos from youTube. simply enter your text into the search input and click submit to enjoy!
+*Word and Video* is a simple web application made by the designer at **phoenixKoding** to create an unique search experience for videos, articles, magazines, ebooks and books. this is made possible with two popular google apis: google books; which includes an abundance of books, ebooks, articles and magazines, as well as the ever growing collection of videos from youTube. simply enter your text into the search input and click submit to enjoy!
 
 ### Navigation Bar
 
 ![Image of Navigation Bar](images/navbar.png)
 
-###  Search or Hunt
+###  Search
 
-![Image of Search Section](images/search.png)
+![Image of Search Section](images/form.png)
 
 ### About
 
@@ -16,7 +16,7 @@
 
 ### Contact
 
-![Image of Footer](images/footer.png)
+![Image of Footer](images/contact.png)
 
 ### Video Results
 
